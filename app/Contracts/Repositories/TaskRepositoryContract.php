@@ -4,7 +4,7 @@ namespace App\Contracts\Repositories;
 
 interface TaskRepositoryContract
 {
-    public function save(array $data): null|array;
+    public function save(array $data): mixed;
 
     public function get(mixed $id): mixed;
 

@@ -7,7 +7,7 @@ use App\Models\Task;
 
 class TaskRepository implements TaskRepositoryContract
 {
-    public function save(array $data): null|array
+    public function save(array $data): mixed
     {
         $task = Task::create($data);
 
