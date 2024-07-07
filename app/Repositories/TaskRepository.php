@@ -21,7 +21,7 @@ class TaskRepository implements TaskRepositoryContract
 
     public function getAll(array $filters = []): mixed
     {
-        return Task::where($filters)->get();
+        return Task::where($filters)->paginate(20);
     }
 
     public function delete(mixed $id)
